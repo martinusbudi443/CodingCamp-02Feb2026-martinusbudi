@@ -24,11 +24,16 @@ h1{
   gap:16px;
 }
 
+.form{
+  flex-direction:column;
+}
 .form,.filter{
   display:flex;
-  flex-direction: column;
   gap:10px;
   flex-wrap:wrap;
+}
+.filter{
+  flex-direction:row;
 }
 
 input,button{
