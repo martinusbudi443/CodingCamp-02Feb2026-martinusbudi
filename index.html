@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>~Todo List🔖~</h1>
+
+  <form id="todoForm" class="form">
+    <input type="text" id="title" placeholder="Add your list" required>
+    <input type="date" id="date" required>
+    <button type="submit">Tambah</button>
+    <button type="button" id="deleteAll" class="danger">Hapus Semua</button>
+  </form>
+
+  <div class="filter">
+    <input type="text" id="filterTitle" placeholder="Cari">
+    <input type="date" id="filterDate">
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Judul</th>
+        <th>Tanggal</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="todoTable"></tbody>
+  </table>
+</div>
+
+<div id="toast"></div>
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
